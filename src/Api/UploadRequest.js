@@ -1,6 +1,8 @@
 import axiox from "axios";
 
-const API = axiox.create({ baseURL: "http://localhost:5000" });
+const API = axiox.create({
+  baseURL: "https://instabook-server.herokuapp.com/",
+});
 
 export const uploadImage = (data) => API.post("/upload/", data);
 

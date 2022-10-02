@@ -1,6 +1,8 @@
 import axiox from "axios";
 
-const API = axiox.create({ baseURL: "http://localhost:5000" });
+const API = axiox.create({
+  baseURL: "https://instabook-server.herokuapp.com/",
+});
 
 export const getTimelinePosts = (id) => API.get(`/post/${id}/timeline`);
 export const likePost = (id, userId) =>
