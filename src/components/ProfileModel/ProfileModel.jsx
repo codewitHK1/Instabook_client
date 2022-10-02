@@ -24,11 +24,9 @@ const ProfileModel = ({ modalOpened, setModalOpened, data }) => {
   const onImageChange = (e) => {
     if (e.target.files && e.target.files[0]) {
       let img = e.target.files[0];
-      if (e.target.name === "profileImage") {
-        setProfileImage(img);
-      } else {
-        setCoverImage[img];
-      }
+      // (e.target.name === "profileImage")
+      setProfileImage(img);
+      // : setCoverImage[img];
     }
   };
   const handleSubmit = (e) => {
