@@ -12,7 +12,7 @@ const ProfileModel = ({ modalOpened, setModalOpened, data }) => {
   const { password, ...other } = data;
   const [formdata, setFormdata] = useState(other);
   const [profileImage, setProfileImage] = useState(null);
-  const [coverImage, setCoverImage] = useState(null);
+  const [coverImage] = useState(null);
   const dispatch = useDispatch();
   const param = useParams();
   // const { user } = useSelector((state) => state.authreducer.authData);
